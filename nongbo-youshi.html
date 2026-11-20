@@ -787,6 +787,46 @@ footer{padding:56px 0 44px}
   .float-tag.ft3{display:none}
   .dash-bar .dstat{display:none}
 }
+/* ---------- 手机端深度适配：与电脑端一致的完整体验 ---------- */
+@media (max-width:920px){
+  .fcard-big{position:relative;top:0;min-height:0}
+  .pl-side{max-height:32vh;padding:12px 14px}
+  .pl-main{padding:18px 14px 0}
+}
+@media (max-width:640px){
+  /* 练习平台顶栏：防溢出，品牌只留图标 */
+  .pl-top{padding:9px 10px;gap:8px}
+  .pl-brand b{display:none}
+  .pl-brand .hx-ava{width:38px;height:38px;border-radius:13px}
+  .pl-dash-btn{padding:7px 11px;font-size:12px}
+  .pl-user{padding:6px 10px;font-size:11.5px}
+  .pl-logout{padding:6px 11px;font-size:11.5px}
+  /* 主区与侧栏更紧凑 */
+  .pl-side{max-height:30vh}
+  .pl-main{padding:14px 11px 0}
+  .pl-stage{padding-bottom:36px}
+  .pl-h{font-size:20px}
+  /* 建档表单：双列改单列，输入不再局促 */
+  .bld{grid-template-columns:1fr;gap:10px}
+  /* 聊天气泡与点评卡满宽显示 */
+  .bub{max-width:96%;font-size:15px;padding:10px 13px}
+  .fb-top{flex-wrap:wrap}
+  .fb-score{font-size:22px}
+  /* 输入条紧凑，长话术可换行 */
+  .pl-input{padding:10px 0 12px;gap:8px}
+  .pl-input input{padding:11px 15px}
+  .pl-send{padding:0 18px;font-size:14px}
+  .pl-mic{width:42px;border-radius:12px}
+  /* 模式切换与任务卡 */
+  .mode-tab{font-size:12.5px;padding:9px 0}
+  .lv{padding:9px 11px;font-size:12.5px}
+  .lv small{font-size:11px}
+  .sc-row{padding:7px 10px;font-size:12.5px}
+  /* 长字段/长链接不撑破布局（防“乱”） */
+  .pl-stage,.pl-stage *{overflow-wrap:anywhere}
+  /* 看板弹层 */
+  .dash-modal{padding:10px}
+}
 /* ---------- 练习平台字号二次上调 ---------- */
 .pc-item b{font-size:16px}.pc-item span{font-size:13px}
 .pc-empty b{font-size:14px}.pc-empty span{font-size:13px}
